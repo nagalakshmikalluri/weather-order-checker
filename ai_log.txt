@@ -1,0 +1,8 @@
+Prompt 1:
+Write Python code using asyncio and aiohttp to fetch weather data concurrently
+
+Prompt 2:
+Add error handling so invalid API responses do not crash the program
+
+Prompt 3:
+Generate a personalized apology message based on weather conditions
