@@ -1,5 +1,6 @@
 import json
 import asyncio
+import time
 import aiohttp
 import os
 from dotenv import load_dotenv
@@ -83,4 +84,7 @@ async def process_orders():
 
 # Run the script
 if __name__ == "__main__":
-    asyncio.run(process_orders())
+    while True:
+        asyncio.run(process_orders())
+        print("Waiting 1 hour before next run...")
+        time.sleep(3600)
